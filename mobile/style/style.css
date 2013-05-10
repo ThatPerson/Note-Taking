@@ -1,0 +1,190 @@
+#header {
+	top:0px;
+	position:fixed;
+	left:0px;
+	right:0px;
+	height:10%;
+	background-color:rgba(0,0,0,0.5);
+	z-index:9;
+
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+
+
+}
+
+div.button {
+	color:#ffffff;
+	left:1%;
+	width:70px;
+	top:-10%;
+	bottom:0px;
+	font-size:30pt;
+	position:absolute;
+	font-weight:bold;
+	font-family:"Titillium Web", sans-serif;
+	text-align:center;
+	cursor:default;
+}
+#name {
+	color:#ffffff;
+	right:1%;
+	width:150px;
+	top:-10%;
+	bottom:0px;
+	position:absolute;
+	font-weight:bold;
+	font-size:30pt;
+	font-family:"Titillium Web", sans-serif;
+	text-align:right;
+	padding-right:10px;
+	cursor:default;
+}
+div.button:hover, #name:hover {
+	color:#0090ff;
+}
+
+#main {
+
+
+	height:100%;
+
+	top:10%;
+	left:0px;
+	right:0px;
+	padding:20px;
+	padding-top:50px;
+	position:absolute;
+}
+#holder {
+	top:5%;
+	right:10%;
+	left:10%;
+	position:absolute;
+}
+#area {
+	top:40px;
+	left:40px;
+	right:40px;
+	bottom:40px;
+	position:absolute;
+
+
+}
+#controls {
+	bottom:0px;
+	position:absolute;
+	height:40px;
+	left:40px;
+	right:40px;
+}
+#post {
+	left:0px;
+	right:0px;
+	height:10%;
+	position:relative;
+	font-size:auto;
+	overflow:hidden;
+}
+#newbutton {
+	left:0px;
+	right:0px;
+	height:100px;
+	width:100%;
+
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	background-color:#ffffff;
+	font-family: "Rambla", sans-serif;
+	font-weight:bold;
+	font-size:30pt;
+	border:none;
+	color:#000000;
+}
+#post:hover, #newbutton:hover {
+	background-color:rgba(0,144,255,0.2);
+	color:#0090ff;
+}
+.title {
+	font-size:16pt;
+	font-weight:bold;
+	font-family:"Titillium Web", sans-serif;
+	text-align:center;
+	cursor:default;
+	border:none;
+	left:0px;
+	right:0px;
+	width:100%;
+	top:-15px;
+	position:absolute;
+
+}
+input.title {
+	top:-30px;
+	background-color:#ffffff;
+}
+.title:hover {
+	color:#0088ff;
+}
+#spacer {
+	background-color: rgba(255, 255, 255, 0); /* Color white with alpha 0.9*/
+	bottom:-50px;
+	height:50px;
+	width:50px;
+	position:absolute;
+}
+.body {
+	border:none;
+	resize:none;
+	font-size:20pt;
+	left:0px;
+	right:0px;
+	width:100%;
+	color:#555555;
+	font-family:"Titillium Web", sans-serif;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	padding-left:40px;
+		cursor:default;
+}
+textarea.body {
+	background-color:#ffffff;
+	overflow:visible;
+	min-height:600px;
+}
+#left {
+	color:#000000;
+	font-size: 20pt;
+	left:0px;
+	width:40px;
+	height:40px;
+	bottom:0px;
+	cursor:default;
+	position:absolute;
+}
+#left:hover {
+	color:#0090ff;
+}
+#right {
+	color:#000000;
+	position:absolute;
+	font-size: 20pt;
+	right:0px;
+	width:40px;
+	height:40px;
+	bottom:0px;
+	cursor:default;
+}
+#right:hover {
+	color:#0090ff;
+}
+.namedate {
+	font-weight:thin;
+	font-size:9pt;
+	color:#555;
+
+}
