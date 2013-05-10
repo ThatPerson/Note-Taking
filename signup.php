@@ -49,8 +49,8 @@ session_set_cookie_params(
 			//$error = $quer;
 			//This is a valid string. We just need to run mysql_query :D
 			mysql_query($quer);
-			setcookie("password", md5($username), time()+60*60*24*30, "/", "cappu.co.uk");
-			setcookie("username", $password, time()+60*60*24*30, "/", "cappu.co.uk");
+			setcookie("password", md5($username), time()+60*60*24*30, "/", $root);
+			setcookie("username", $password, time()+60*60*24*30, "/", $root);
 // 			$_SESSION['username'] = md5($username);
 // 			$_SESSION['password'] = $password;
 			header("Location: index.php");

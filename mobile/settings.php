@@ -11,9 +11,9 @@
 		if ($r != 1) {
 // 			unset($_COOKIE['username']);
 // 			unset($_COOKIE['password']);
-			setcookie ("username", "", time() - 3600, "/", "cappu.co.uk");
+			setcookie ("username", "", time() - 3600, "/", $root);
 		//echo $_COOKIE['username'];
-		setcookie ("password", "", time() - 3600, "/", "cappu.co.uk");
+		setcookie ("password", "", time() - 3600, "/", $root);
 			header("Location: login.php");
 			echo "MOVETO:LOGOUT"; //Send this to the JavaScript, tell them to log the user out. This will be done by removing the & from the url
 		} else {

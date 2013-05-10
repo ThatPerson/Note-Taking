@@ -26,9 +26,9 @@
 	<head>
 		<title><?php echo $pagetitle ?></title>
 		<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Galdeano|Poly|Oxygen' rel='stylesheet' type='text/css'>
-		<link href='http://www.cappu.co.uk/html/styles/style.css' rel='stylesheet' type='text/css'>
-		<script src='http://www.cappu.co.uk/html/scripts/md5-min.js' type="text/javascript"></script> 
-		<script src='http://www.cappu.co.uk/html/scripts/script.js' type="text/javascript"></script> 
+		<link href='html/styles/style.css' rel='stylesheet' type='text/css'>
+		<script src='html/scripts/md5-min.js' type="text/javascript"></script> 
+		<script src='html/scripts/script.js' type="text/javascript"></script> 
 		<script>
 			function swit() {
 				if (document.getElementById("dropdown").style.display == "none") {

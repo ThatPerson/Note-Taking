@@ -40,8 +40,8 @@ session_set_cookie_params(
 		$query = "select * from espro_users where md5(username) = '".mysql_real_escape_string($_GET['username'])."' and password = '".mysql_real_escape_string($_GET['password'])."' limit 1"; //Two stage hashing on it. First layer is SHA-256, and this is stored in the DB. The MD5 hash of the sha256 is given to the user;
 		$r = mysql_num_rows(mysql_query($query));
 		if ($r == 1) {
-			setcookie("password", $_GET['password'], time()+60*60*24*30, "/", "cappu.co.uk");
-			setcookie("username", $_GET['username'], time()+60*60*24*30, "/", "cappu.co.uk");
+			setcookie("password", $_GET['password'], time()+60*60*24*30, "/", $root);
+			setcookie("username", $_GET['username'], time()+60*60*24*30, "/", $root);
 // 			$_COOKIE['username'] = $_GET['username'];
 // 			z$_COOKIE['password'] = $_GET['password'];
 			if (isset($_GET['redirect'])) {

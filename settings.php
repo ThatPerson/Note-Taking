@@ -11,11 +11,11 @@ session_set_cookie_params(
 	include("libraries/mobile.php");
 	include("html/index.php");
 	if (isset($_GET['logout'])) {
-		setcookie ("username", "", time() - 3600, "/", "cappu.co.uk");
+		setcookie ("username", "", time() - 3600, "/", $root);
 		//echo $_COOKIE['username'];
-		setcookie ("password", "", time() - 3600, "/", "cappu.co.uk");
+		setcookie ("password", "", time() - 3600, "/", $root);
 		header("Location: login.php");
-// 		setcookie("username", $password, time()+60*60*24*30, "/", "cappu.co.uk");
+// 		setcookie("username", $password, time()+60*60*24*30, "/", $root);
 	}
 	if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) {
 		$query = "select * from espro_users where md5(username) = '".mysql_real_escape_string($_COOKIE['username'])."' and password = '".mysql_real_escape_string($_COOKIE['password'])."' limit 1"; //Two stage hashing on it. First layer is SHA-256, and this is stored in the DB. The MD5 hash of the sha256 is given to the user;
@@ -30,7 +30,7 @@ session_set_cookie_params(
 				if ($data->password = $_GET['current']) {
 					if ($_GET['p1'] == $_GET['p2']) {
 						$query = "update espro_users set password = '".$_GET['p1']."' where md5(username) = '".$_COOKIE['username']."'";
-						setcookie("password", $_GET['p1'], time()+60*60*24*30, "/", "cappu.co.uk");
+						setcookie("password", $_GET['p1'], time()+60*60*24*30, "/", $root);
 						//$_COOKIE['password'] = $_GET['p1'];
 						mysql_query($query);
 						header("Location: index.php");

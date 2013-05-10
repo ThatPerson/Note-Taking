@@ -8,8 +8,8 @@
 		$r = mysql_num_rows(mysql_query($query));
 		if ($r == 1) {
 
-			setcookie("password", $_GET['password'], time()+60*60*24*30, "/", "cappu.co.uk");
-			setcookie("username", $_GET['username'], time()+60*60*24*30, "/", "cappu.co.uk");
+			setcookie("password", $_GET['password'], time()+60*60*24*30, "/", $root);
+			setcookie("username", $_GET['username'], time()+60*60*24*30, "/", $root);
 // 			$_COOKIE['username'] = $_GET['username'];
 // 			$_COOKIE['password'] = $_GET['password'];
 			header("Location: index.php");
